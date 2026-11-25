@@ -18,11 +18,36 @@
 
    Calcule e exiba os 4 resultados no console.
    ========================================================================== */
-   let precoCafe = 8.50;
-   let qntcafe = 42;
-   let precoBolo = 12.00;
-   
 
+   let cafe = {
+      "preco":8.5 ,
+      "quantidade":42
+   }
+
+   let bolo = {
+      "preco":12.00 ,
+      "quantidade":18
+   }
+
+      let totalCookies = {
+      "produzidos":125 ,
+      "capacidade":6
+   }
+
+   let taxaOperacional = 15.00;
+   let clientes = 30;
+
+   const faturamentoBruto = ((cafe.preco * cafe.quantidade) + (bolo.preco * bolo.quantidade));
+   console.log ("O faturamento bruto foi de " + faturamentoBruto)
+
+   const faturamentoLiquido = (faturamentoBruto - taxaOperacional)
+   console.log ("O faturamento líquido foi de " + faturamentoLiquido)
+
+   const ticketmedio = (faturamentoBruto / clientes)
+   console.log ("O Ticket Médio foi de  " + ticketmedio)
+
+   const sobraCookies = 10 % 2;
+   console.log("A sobra de cookies é " + sobraCookies)
 
 /* ==========================================================================
    EXERCÍCIO 2: VALIDAÇÃO DE CADASTRO E COMPRA
@@ -45,10 +70,14 @@
    5. O saldo do cliente cobre o valor da compra?
    ========================================================================== */
 
+   let idade = 17;
+   let codFormulario = "100";
+   let codBanco = 100;
+   let saldoDisponivel = 250.00;
+   let valorCompra = 250.00
 
-
-
-
+   const maiorIdade = 17 >= 18
+   console.log (maiorIdade)
 /* ==========================================================================
    EXERCÍCIO 3: CONCESSÃO DE BENEFÍCIOS
    
