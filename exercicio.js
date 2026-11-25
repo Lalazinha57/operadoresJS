@@ -76,8 +76,20 @@
    let saldoDisponivel = 250.00;
    let valorCompra = 250.00
 
-   const maiorIdade = 17 >= 18
-   console.log (maiorIdade)
+   const maiorIdade = 17 >= 18;
+   console.log (maiorIdade);
+
+   const conferindo = codFormulario == codBanco;
+   console.log(conferindo);
+
+   const conferindoValor = codFormulario === saldoDisponivel;
+   console.log (conferindoValor);
+
+   const tipoDiferente = codFormulario !== codBanco;
+   console.log(tipoDiferente);
+   
+   const cobreValor = saldoDisponivel == valorCompra;
+   console.log(cobreValor);
 /* ==========================================================================
    EXERCÍCIO 3: CONCESSÃO DE BENEFÍCIOS
    
@@ -99,3 +111,19 @@
    3. Acesso à área VIP: liberado para assinantes premium, ou para compras a
       partir de 300 reais que possuam cupom promocional.
    ========================================================================== */
+
+   let compra = 220;
+   let clientePremium = false;
+   let cupom = true;
+   let endereco = false;
+   let estudante = true;
+   let idadeEstudante = 22;
+
+   const freteGratis = (compra >= 200 || clientePremium) && endereco;
+   console.log(freteGratis);
+
+   const descontoUniversitario = ( idadeEstudante <= 29);
+   console.log(descontoUniversitario);
+
+   const areaVip = (clientePremium || compra >= 300) && cupom;
+   console.log(areaVip)
